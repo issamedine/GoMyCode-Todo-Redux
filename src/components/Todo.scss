@@ -1,0 +1,86 @@
+.todo-list {
+  max-width: 600px;
+  margin: 10% auto 0 auto;
+}
+.wrapper-btn-input {
+  position: relative;
+  input {
+    width: 90%;
+    padding: 1% 1%;
+  }
+}
+
+.title-todo {
+  background-color: #35495d;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  padding: 2% 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.input-add {
+  color: #919191;
+}
+
+.btn-add {
+  position: absolute;
+  color: #ffffff;
+  background-color: #30a64a;
+  top: 0;
+  height: 100%;
+  width: 10%;
+  cursor: pointer;
+}
+.fa-plus:before {
+  content: "\f067";
+  position: absolute;
+  top: 12px;
+  right: 22px;
+}
+
+.affichage {
+  &:nth-child(even){
+    background-color: #2abb9c;
+    color: #ffffff;
+  }
+  &:nth-child(odd){
+    background-color: #f3f3f3;
+    color: #919191;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 52px;
+  .wrapper-item {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    span:nth-child(1) {
+      cursor: pointer;
+      i {
+        color: #ffffff;
+        width: 46px;
+        height: 41px;
+        position: relative;
+        background-color: #30a64a;
+      }
+    }
+    span:nth-child(2) {
+      cursor: pointer;
+      i {
+        color: #ffffff;
+        width: 46px;
+        height: 41px;
+        position: relative;
+        background-color: #da3849;
+      }
+    }
+  }
+}
+.fa-edit:before,
+.fa-trash-alt:before {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
